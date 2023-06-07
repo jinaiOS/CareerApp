@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BorderTextfieldView" customModule="CareerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAnim" destination="T37-6y-ci1" id="TkU-dx-liT"/>
+                <outlet property="csrAnimCenter" destination="Qb1-5s-djT" id="pJD-Hr-V6J"/>
+                <outlet property="tf" destination="P8m-lh-T02" id="6xN-tW-cFf"/>
+                <outlet property="vBorder" destination="wj5-BF-TQE" id="Wrn-97-PvP"/>
+                <outlet property="vContainer" destination="iN0-l3-epB" id="cg1-Hq-wej"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="517" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wj5-BF-TQE">
+                    <rect key="frame" x="0.0" y="0.0" width="517" height="95"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P8m-lh-T02">
+                            <rect key="frame" x="0.0" y="0.0" width="517" height="95"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="P8m-lh-T02" secondAttribute="trailing" id="1ns-Ug-egP"/>
+                        <constraint firstAttribute="bottom" secondItem="P8m-lh-T02" secondAttribute="bottom" id="gxe-ln-w9D"/>
+                        <constraint firstItem="P8m-lh-T02" firstAttribute="top" secondItem="wj5-BF-TQE" secondAttribute="top" id="im5-pE-nHh"/>
+                        <constraint firstItem="P8m-lh-T02" firstAttribute="leading" secondItem="wj5-BF-TQE" secondAttribute="leading" id="yNF-xe-R1m"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T37-6y-ci1">
+                    <rect key="frame" x="17" y="40" width="41" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="dfB-0E-aax"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="wj5-BF-TQE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Kdz-7W-khj"/>
+                <constraint firstItem="T37-6y-ci1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Qb1-5s-djT"/>
+                <constraint firstItem="wj5-BF-TQE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jOe-iD-Y1I"/>
+                <constraint firstAttribute="bottom" secondItem="wj5-BF-TQE" secondAttribute="bottom" id="qQE-L2-H3x"/>
+                <constraint firstItem="T37-6y-ci1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="uM9-Tm-P60"/>
+                <constraint firstAttribute="trailing" secondItem="wj5-BF-TQE" secondAttribute="trailing" id="vCw-m0-7kg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="2" y="-33"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
